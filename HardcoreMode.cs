@@ -6,7 +6,7 @@ using UnityEngine;
 namespace HardcoreREPO;
 
 [HarmonyPatch(typeof(PlayerAvatar))]
-static class Worthless
+static class HardcoreREPO
 {
     public static ArrayList permaDeadIndividuals = new ArrayList();
     [HarmonyPrefix, HarmonyPatch(nameof(PlayerAvatar.PlayerDeathDone))]

@@ -6,9 +6,9 @@ using UnityEngine;
 namespace Murderthon;
 
 [BepInPlugin("agmas.HardcoreREPO", "HardcoreREPO", "1.0")]
-public class Murderthon : BaseUnityPlugin
+public class HardcoreREPO : BaseUnityPlugin
 {
-    internal static Murderthon Instance { get; private set; } = null!;
+    internal static HardcoreREPO Instance { get; private set; } = null!;
     internal new static ManualLogSource Logger => Instance._logger;
     private ManualLogSource _logger => base.Logger;
     internal Harmony? Harmony { get; set; }

@@ -16,8 +16,9 @@ And now; for people who wanted to be in the mod (and oszi):
 ![Screenshot from 2025-04-21 23-00-50](https://github.com/user-attachments/assets/543e98b6-300b-486e-8200-a47ad169bcba)
 
 
-
 ### Why "Madeline's Perma-death"? 
 
 Because of my steam name, and a guy who REALLY wanted me to name the mod after it.
 ... :3
+
+**Icon by ToasterPopper!**

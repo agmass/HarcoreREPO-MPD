@@ -12,7 +12,7 @@ static class HardcoreREPO
     [HarmonyPrefix, HarmonyPatch(nameof(PlayerAvatar.PlayerDeathDone))]
     private static void Death_Prefix(PlayerAvatar __instance)
     {
-        if (!__instance.isLocal) {
+        if (!__instance.isLocal && SemiFunc.IsMasterClientOrSingleplayer()) {
             permaDeadIndividuals.Add(__instance.steamID);
         }
     }
@@ -21,7 +21,7 @@ static class HardcoreREPO
     [HarmonyPrefix, HarmonyPatch(nameof(PlayerAvatar.Update))]
     private static void Respawn_Prefix(PlayerAvatar __instance)
     {
-        if (!__instance.isLocal) {
+        if (!__instance.isLocal && SemiFunc.IsMasterClientOrSingleplayer()) {
             if (permaDeadIndividuals.Contains(__instance.steamID) && !__instance.deadSet) {
                 __instance.PlayerDeath(-1);
             }
